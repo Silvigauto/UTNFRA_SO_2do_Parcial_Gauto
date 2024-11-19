@@ -64,3 +64,7 @@ sudo mkswap /dev/vg_temp/lv_swap
 sudo swapon /dev/vg_temp/lv_swap
 sudo mount /dev/mapper/vg_datos-lv_docker /var/lib/docker/
 sudo mount /dev/mapper/vg_datos-lv_workareas /work/
+
+#extiendo para que mas adelante se pueda crear la imagen Docker
+sudo lvextend -L +110M /dev/vg_datos/lv_docker
+sudo resize2fs /dev/vg_datos/lv_docker

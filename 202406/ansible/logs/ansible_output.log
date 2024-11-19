@@ -1,0 +1,132 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 19:14:13,501 p=1777 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 19:14:13,684 p=1777 u=root n=ansible | PLAY [all] ******************************************************************************************************
+2024-11-18 19:14:13,698 p=1777 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************
+2024-11-18 19:14:13,796 p=1777 u=root n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nroot@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-11-18 19:14:14,798 p=1777 u=root n=ansible | ok: [localhost]
+2024-11-18 19:14:14,816 p=1777 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************
+2024-11-18 19:14:14,838 p=1777 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/silvina/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 7, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+-name: crear estructura de directorios
+^ here
+
+2024-11-18 19:14:14,839 p=1777 u=root n=ansible | PLAY RECAP ******************************************************************************************************
+2024-11-18 19:14:14,839 p=1777 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 19:14:14,840 p=1777 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 19:16:44,338 p=1891 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 19:16:44,477 p=1891 u=root n=ansible | PLAY [produccion] ***********************************************************************************************
+2024-11-18 19:16:44,486 p=1891 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************
+2024-11-18 19:16:45,515 p=1891 u=root n=ansible | ok: [localhost]
+2024-11-18 19:16:45,534 p=1891 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************
+2024-11-18 19:16:45,554 p=1891 u=root n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/home/silvina/repogit/UTN-FRA_SO_Examenes/202406/ansible/roles/2do_parcial/tasks/main.yml': line 7, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+-name: crear estructura de directorios
+^ here
+
+2024-11-18 19:16:45,555 p=1891 u=root n=ansible | PLAY RECAP ******************************************************************************************************
+2024-11-18 19:16:45,555 p=1891 u=root n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 19:20:41,957 p=2019 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 19:20:42,103 p=2019 u=root n=ansible | PLAY [produccion] ***********************************************************************************************
+2024-11-18 19:20:42,112 p=2019 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************
+2024-11-18 19:20:43,139 p=2019 u=root n=ansible | ok: [localhost]
+2024-11-18 19:20:43,158 p=2019 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************
+2024-11-18 19:20:43,195 p=2019 u=root n=ansible | TASK [2do_parcial : debug] **************************************************************************************
+2024-11-18 19:20:43,206 p=2019 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 19:20:43,215 p=2019 u=root n=ansible | TASK [2do_parcial : crear estructura de directorios] ************************************************************
+2024-11-18 19:20:43,518 p=2019 u=root n=ansible | changed: [localhost] => (item=-/tmp/2do_parcial/alumno -/tmp/2do_parcial/equipo)
+2024-11-18 19:20:43,529 p=2019 u=root n=ansible | TASK [2do_parcial : crear archivo con datos alumno] *************************************************************
+2024-11-18 19:20:44,089 p=2019 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "checksum": "0a8b68e8857064b119907271521bf12913833dd4", "msg": "Destination directory /tmp/2do_parcial/alumno does not exist"}
+2024-11-18 19:20:44,091 p=2019 u=root n=ansible | PLAY RECAP ******************************************************************************************************
+2024-11-18 19:20:44,092 p=2019 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-18 19:22:49,158 p=2213 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 19:22:49,300 p=2213 u=root n=ansible | PLAY [produccion] ***********************************************************************************************
+2024-11-18 19:22:49,309 p=2213 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************
+2024-11-18 19:22:50,340 p=2213 u=root n=ansible | ok: [localhost]
+2024-11-18 19:22:50,357 p=2213 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************
+2024-11-18 19:22:50,394 p=2213 u=root n=ansible | TASK [2do_parcial : debug] **************************************************************************************
+2024-11-18 19:22:50,406 p=2213 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 19:22:50,415 p=2213 u=root n=ansible | TASK [2do_parcial : crear estructura de directorios] ************************************************************
+2024-11-18 19:22:50,714 p=2213 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-18 19:22:50,867 p=2213 u=root n=ansible | changed: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-18 19:22:50,877 p=2213 u=root n=ansible | TASK [2do_parcial : crear archivo con datos alumno] *************************************************************
+2024-11-18 19:22:51,432 p=2213 u=root n=ansible | changed: [localhost]
+2024-11-18 19:22:51,441 p=2213 u=root n=ansible | TASK [2do_parcial : crear archivo con datos pc] *****************************************************************
+2024-11-18 19:22:51,755 p=2213 u=root n=ansible | changed: [localhost]
+2024-11-18 19:22:51,765 p=2213 u=root n=ansible | TASK [2do_parcial : darle permisos a 2PSupervisores] ************************************************************
+2024-11-18 19:22:52,008 p=2213 u=root n=ansible | changed: [localhost]
+2024-11-18 19:22:52,017 p=2213 u=root n=ansible | TASK [Otra tarea] ***********************************************************************************************
+2024-11-18 19:22:52,026 p=2213 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 19:22:52,045 p=2213 u=root n=ansible | PLAY RECAP ******************************************************************************************************
+2024-11-18 19:22:52,046 p=2213 u=root n=ansible | localhost                  : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 19:33:56,709 p=2558 u=root n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-18 19:33:56,848 p=2558 u=root n=ansible | PLAY [produccion] ***********************************************************************************************************
+2024-11-18 19:33:56,857 p=2558 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************
+2024-11-18 19:33:57,897 p=2558 u=root n=ansible | ok: [localhost]
+2024-11-18 19:33:57,915 p=2558 u=root n=ansible | TASK [include_role : 2do_parcial] *******************************************************************************************
+2024-11-18 19:33:57,950 p=2558 u=root n=ansible | TASK [2do_parcial : debug] **************************************************************************************************
+2024-11-18 19:33:57,961 p=2558 u=root n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-11-18 19:33:57,971 p=2558 u=root n=ansible | TASK [2do_parcial : crear estructura de directorios] ************************************************************************
+2024-11-18 19:33:58,270 p=2558 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/alumno)
+2024-11-18 19:33:58,430 p=2558 u=root n=ansible | ok: [localhost] => (item=/tmp/2do_parcial/equipo)
+2024-11-18 19:33:58,439 p=2558 u=root n=ansible | TASK [2do_parcial : crear archivo con datos alumno] *************************************************************************
+2024-11-18 19:33:58,982 p=2558 u=root n=ansible | ok: [localhost]
+2024-11-18 19:33:58,993 p=2558 u=root n=ansible | TASK [2do_parcial : obtener información del equipo] *************************************************************************
+2024-11-18 19:33:59,281 p=2558 u=root n=ansible | ok: [localhost]
+2024-11-18 19:33:59,291 p=2558 u=root n=ansible | TASK [2do_parcial : crear archivo con datos de la PC] ***********************************************************************
+2024-11-18 19:33:59,721 p=2558 u=root n=ansible | changed: [localhost]
+2024-11-18 19:33:59,731 p=2558 u=root n=ansible | TASK [2do_parcial : darle permisos a 2PSupervisores] ************************************************************************
+2024-11-18 19:33:59,963 p=2558 u=root n=ansible | ok: [localhost]
+2024-11-18 19:33:59,972 p=2558 u=root n=ansible | TASK [Otra tarea] ***********************************************************************************************************
+2024-11-18 19:33:59,981 p=2558 u=root n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-18 19:33:59,999 p=2558 u=root n=ansible | PLAY RECAP ******************************************************************************************************************
+2024-11-18 19:34:00,000 p=2558 u=root n=ansible | localhost                  : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
